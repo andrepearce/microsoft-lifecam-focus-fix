@@ -1,0 +1,1 @@
+KERNEL=="video[0-9]*", SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idProduct}=="${CAM_PRODUCT_ID}", RUN+="${SET_UTIL_PATH} '${CAM_PRODUCT_ID}' 0"
